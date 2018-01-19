@@ -1,0 +1,52 @@
+﻿@model ImageResizer.Models.Image
+
+@{
+    ViewBag.Title = "Resize Options";
+}
+
+<h2>Choose resize options</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+        </dt>
+
+        <dd>
+            <img src="@Url.Content(Model.ImagePath)" />
+        </dd>
+
+    </dl>
+</div>
+
+<p>Enter new width and height</p>
+
+@using (Ajax.BeginForm("Resizing", "Image",new AjaxOptions { UpdateTargetId = "divInterestDeatils" }))
+{
+
+    <fieldset>
+        <legend>Enter new parameters</legend>
+        <div id="divInterestDeatils"></div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Width)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Width)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Height)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Height)
+        </div>
+        <p>
+            <input type="submit" value="Upload" />
+        </p>
+
+        <b>
+            @Html.ActionLink("Go back", "Resize/0")
+        </b>
+    </fieldset>
+}  

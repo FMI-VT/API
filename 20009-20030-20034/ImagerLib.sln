@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImagerLib", "ImagerLib\ImagerLib.csproj", "{9F60AB33-81B7-49BB-893D-70B0BF4B9DB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageConverterResizer", "ImageConverterResizer\ImageConverterResizer.csproj", "{B797FA48-685C-48AA-99E6-B0562C4A105B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImagerLib.Example.Wpf", "ImagerLib.Example.Wpf\ImagerLib.Example.Wpf.csproj", "{842C3ADC-96F9-44B0-93F9-15F2746B300D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageResizer", "ImageResizer\ImageResizer.csproj", "{B3D0899E-BFC0-43EF-9784-1171145D5D58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F60AB33-81B7-49BB-893D-70B0BF4B9DB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F60AB33-81B7-49BB-893D-70B0BF4B9DB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F60AB33-81B7-49BB-893D-70B0BF4B9DB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F60AB33-81B7-49BB-893D-70B0BF4B9DB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B797FA48-685C-48AA-99E6-B0562C4A105B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B797FA48-685C-48AA-99E6-B0562C4A105B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B797FA48-685C-48AA-99E6-B0562C4A105B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B797FA48-685C-48AA-99E6-B0562C4A105B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{842C3ADC-96F9-44B0-93F9-15F2746B300D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{842C3ADC-96F9-44B0-93F9-15F2746B300D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{842C3ADC-96F9-44B0-93F9-15F2746B300D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{842C3ADC-96F9-44B0-93F9-15F2746B300D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3D0899E-BFC0-43EF-9784-1171145D5D58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3D0899E-BFC0-43EF-9784-1171145D5D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3D0899E-BFC0-43EF-9784-1171145D5D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3D0899E-BFC0-43EF-9784-1171145D5D58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F134A45-DAA1-4401-9CC9-E71F1CB3A241}
+	EndGlobalSection
+EndGlobal

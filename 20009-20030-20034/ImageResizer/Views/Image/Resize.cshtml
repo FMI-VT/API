@@ -1,0 +1,30 @@
+﻿@model ImageResizer.Models.Image
+
+@{
+    ViewBag.Title = "Resize";
+}
+
+<h2>Choose resize options</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+        </dt>
+
+        <dd>
+            <img src="@Url.Content(Model.ImagePath)" />
+        </dd>
+
+    </dl>
+</div>
+<p>
+
+    @Html.ActionLink("Resize", "ResizeOptions", new { id = Model.ImageId }) |
+    @Html.ActionLink("Crop", "Crop", new { id = Model.ImageId }) |
+    @Html.ActionLink("Skew", "Skew",new { id = Model.ImageId }) |
+
+    <b>
+        @Html.ActionLink("Go back", "View/0")
+</b>
+</p>

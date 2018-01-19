@@ -1,0 +1,14 @@
+﻿@model Exception
+@{
+    ViewBag.Title = "Error";
+}
+
+<h2>Error</h2>
+
+
+@Model.Message
+<p>
+    <b>
+        @Html.ActionLink("Go back", "View/0")
+    </b>
+</p>

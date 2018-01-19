@@ -1,0 +1,31 @@
+﻿<Controls:MetroWindow x:Class="ImagerLib.Example.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:Views="clr-namespace:ImagerLib.Example.Wpf.Views"
+        xmlns:local="clr-namespace:ImagerLib.Example.Wpf"
+        mc:Ignorable="d"
+        Title="Imager Converter" Height="330" Width="320"
+        BorderBrush="{DynamicResource AccentColorBrush}" BorderThickness="1"
+        WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    
+    <Controls:MetroWindow.WindowButtonCommands>
+        <Controls:WindowButtonCommands Template="{DynamicResource MahApps.Metro.Templates.WindowButtonCommands.Win10}" />
+    </Controls:MetroWindow.WindowButtonCommands>
+
+    <Grid>
+        <Controls:MetroAnimatedSingleRowTabControl x:Name="MainTabControl" Grid.Row="1" Controls:TabControlHelper.Underlined="SelectedTabItem">
+            <TabItem Header="Converter">
+                <Views:ConverterView DataContext="{Binding}" />
+            </TabItem>
+            <TabItem Header="Resizer">
+                <Views:ResizerView DataContext="{Binding}" />
+            </TabItem>
+            <TabItem Header="Crop">
+                <Views:CropView DataContext="{Binding}" />
+            </TabItem>
+        </Controls:MetroAnimatedSingleRowTabControl>
+    </Grid>
+</Controls:MetroWindow>
