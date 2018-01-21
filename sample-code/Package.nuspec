@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>PrimeHolding.Tools</id>
+    <version>1.0.0</version>
+    <authors>Dimiter Nikov</authors>
+    <owners>Dimiter Nikov</owners>
+    <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://gitlab.programista.pro/dimiter.nikov/ImageTools-API</projectUrl>
+    <iconUrl>https://gitlab.programista.pro/dimiter.nikov/ImageTools-API/NuGetIcon.png?raw=true</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Sample shared Class Library used for a Course Project in Software Engineering's API course</description>
+    <releaseNotes>First public release.</releaseNotes>
+    <copyright>Copyright (c) 20017 - 2018, SBND jsc</copyright>
+    <tags>API</tags>
+  </metadata>
+</package>

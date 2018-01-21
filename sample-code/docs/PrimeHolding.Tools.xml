@@ -1,0 +1,731 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PrimeHolding.Tools</name>
+    </assembly>
+    <members>
+        <member name="T:PrimeHolding.Tools.Common.Exceptions.FileNotFoundException">
+             <summary>
+                 (Serializable) exception for signalling file not found errors. This class cannot be
+                 inherited.
+             </summary>
+            
+             <seealso cref="T:PrimeHolding.Tools.Common.Exceptions.GenericException"/>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.FileNotFoundException.#ctor">
+            <summary>
+                Initializes a new instance of the
+                PrimeHolding.Tools.Common.Exceptions.FileNotFoundException class.
+            </summary>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.FileNotFoundException.#ctor(System.String)">
+             <summary>
+                 Initializes a new instance of the
+                 PrimeHolding.Tools.Common.Exceptions.FileNotFoundException class.
+             </summary>
+            
+             <param name="message">  The message. </param>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.FileNotFoundException.#ctor(System.String,System.Exception)">
+             <summary>
+                 Initializes a new instance of the
+                 PrimeHolding.Tools.Common.Exceptions.FileNotFoundException class.
+             </summary>
+            
+             <param name="message">          The message. </param>
+             <param name="innerException">   The inner exception. </param>
+        </member>
+        <member name="T:PrimeHolding.Tools.Common.Exceptions.FileNotReadableException">
+             <summary>
+                 (Serializable) exception for signalling file not readable errors. This class cannot be
+                 inherited.
+             </summary>
+            
+             <seealso cref="T:PrimeHolding.Tools.Common.Exceptions.GenericException"/>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.FileNotReadableException.#ctor">
+            <summary>
+                Initializes a new instance of the
+                PrimeHolding.Tools.Common.Exceptions.FileNotReadableException class.
+            </summary>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.FileNotReadableException.#ctor(System.String)">
+             <summary>
+                 Initializes a new instance of the
+                 PrimeHolding.Tools.Common.Exceptions.FileNotReadableException class.
+             </summary>
+            
+             <param name="message">  The message. </param>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.FileNotReadableException.#ctor(System.String,System.Exception)">
+             <summary>
+                 Initializes a new instance of the
+                 PrimeHolding.Tools.Common.Exceptions.FileNotReadableException class.
+             </summary>
+            
+             <param name="message">          The message. </param>
+             <param name="innerException">   The inner exception. </param>
+        </member>
+        <member name="T:PrimeHolding.Tools.Common.Exceptions.FileNotWritableException">
+             <summary>
+                 (Serializable) exception for signalling file not writable errors. This class cannot be
+                 inherited.
+             </summary>
+            
+             <seealso cref="T:PrimeHolding.Tools.Common.Exceptions.GenericException"/>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.FileNotWritableException.#ctor">
+            <summary>
+                Initializes a new instance of the
+                PrimeHolding.Tools.Common.Exceptions.FileNotWritableException class.
+            </summary>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.FileNotWritableException.#ctor(System.String)">
+             <summary>
+                 Initializes a new instance of the
+                 PrimeHolding.Tools.Common.Exceptions.FileNotWritableException class.
+             </summary>
+            
+             <param name="message">  The message. </param>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.FileNotWritableException.#ctor(System.String,System.Exception)">
+             <summary>
+                 Initializes a new instance of the
+                 PrimeHolding.Tools.Common.Exceptions.FileNotWritableException class.
+             </summary>
+            
+             <param name="message">          The message. </param>
+             <param name="innerException">   The inner exception. </param>
+        </member>
+        <member name="T:PrimeHolding.Tools.Common.Exceptions.GenericException">
+             <summary>   (Serializable) exception for signalling generic errors. </summary>
+            
+             <seealso cref="T:System.Exception"/>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.GenericException.#ctor">
+            <summary>
+                Initializes a new instance of the PrimeHolding.Tools.Common.Exceptions.GenericException
+                class.
+            </summary>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.GenericException.#ctor(System.String)">
+             <summary>
+                 Initializes a new instance of the PrimeHolding.Tools.Common.Exceptions.GenericException
+                 class.
+             </summary>
+            
+             <param name="message">  The message. </param>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.GenericException.#ctor(System.String,System.Exception)">
+             <summary>
+                 Initializes a new instance of the PrimeHolding.Tools.Common.Exceptions.GenericException
+                 class.
+             </summary>
+            
+             <param name="message">          The message. </param>
+             <param name="innerException">   The inner exception. </param>
+        </member>
+        <member name="T:PrimeHolding.Tools.Common.Exceptions.ImageFormatException">
+             <summary>
+                 (Serializable) exception for signalling image format errors. This class cannot be
+                 inherited.
+             </summary>
+            
+             <seealso cref="T:PrimeHolding.Tools.Common.Exceptions.GenericException"/>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.ImageFormatException.#ctor">
+            <summary>
+                Initializes a new instance of the
+                PrimeHolding.Tools.Common.Exceptions.ImageFormatException class.
+            </summary>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.ImageFormatException.#ctor(System.String)">
+             <summary>
+                 Initializes a new instance of the
+                 PrimeHolding.Tools.Common.Exceptions.ImageFormatException class.
+             </summary>
+            
+             <param name="message">  The message. </param>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.ImageFormatException.#ctor(System.String,System.Exception)">
+             <summary>
+                 Initializes a new instance of the
+                 PrimeHolding.Tools.Common.Exceptions.ImageFormatException class.
+             </summary>
+            
+             <param name="message">          The message. </param>
+             <param name="innerException">   The inner exception. </param>
+        </member>
+        <member name="T:PrimeHolding.Tools.Common.Exceptions.InvalidAspectRatioException">
+             <summary>
+                 (Serializable) exception for signalling invalid aspect ratio errors. This class cannot be
+                 inherited.
+             </summary>
+            
+             <seealso cref="T:PrimeHolding.Tools.Common.Exceptions.GenericException"/>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.InvalidAspectRatioException.#ctor">
+            <summary>
+                Initializes a new instance of the
+                PrimeHolding.Tools.Common.Exceptions.InvalidAspectRatioException class.
+            </summary>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.InvalidAspectRatioException.#ctor(System.String)">
+             <summary>
+                 Initializes a new instance of the
+                 PrimeHolding.Tools.Common.Exceptions.InvalidAspectRatioException class.
+             </summary>
+            
+             <param name="message">  The message. </param>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.InvalidAspectRatioException.#ctor(System.String,System.Exception)">
+             <summary>
+                 Initializes a new instance of the
+                 PrimeHolding.Tools.Common.Exceptions.InvalidAspectRatioException class.
+             </summary>
+            
+             <param name="message">          The message. </param>
+             <param name="innerException">   The inner exception. </param>
+        </member>
+        <member name="T:PrimeHolding.Tools.Common.Exceptions.InvalidParameterException">
+             <summary>
+                 (Serializable) exception for signalling invalid parameter errors. This class cannot be
+                 inherited.
+             </summary>
+            
+             <seealso cref="T:System.Exception"/>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.InvalidParameterException.#ctor">
+            <summary>
+                Initializes a new instance of the
+                PrimeHolding.Tools.Common.Exceptions.InvalidParameterException class.
+            </summary>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.InvalidParameterException.#ctor(System.String)">
+             <summary>
+                 Initializes a new instance of the
+                 PrimeHolding.Tools.Common.Exceptions.InvalidParameterException class.
+             </summary>
+            
+             <param name="message">  The message. </param>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Exceptions.InvalidParameterException.#ctor(System.String,System.Exception)">
+             <summary>
+                 Initializes a new instance of the
+                 PrimeHolding.Tools.Common.Exceptions.InvalidParameterException class.
+             </summary>
+            
+             <param name="message">          The message. </param>
+             <param name="innerException">   The inner exception. </param>
+        </member>
+        <member name="T:PrimeHolding.Tools.Common.Permissions.CheckPermissions">
+            <summary>   A check permissions. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.path">
+            <summary>   Full pathname of the file. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.principal">
+            <summary>   The principal. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyAppendData">
+            <summary>   True to deny, false to allow append data. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyChangePermissions">
+            <summary>   True to deny, false to allow change permissions. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyCreateDirectories">
+            <summary>   True to deny, false to allow create directories. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyCreateFiles">
+            <summary>   True to deny, false to allow create files. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyDelete">
+            <summary>   True to deny, false to allow delete. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyDeleteSubdirectoriesAndFiles">
+            <summary>   True to deny, false to allow delete subdirectories and files. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyExecuteFile">
+            <summary>   True to deny, false to allow execute file. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyFullControl">
+            <summary>   True to deny, false to allow full control. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyListDirectory">
+            <summary>   True to deny, false to allow list directory. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyModify">
+            <summary>   True to deny, false to allow modify. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyRead">
+            <summary>   True to deny, false to allow read. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyReadAndExecute">
+            <summary>   True to deny, false to allow read and execute. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyReadAttributes">
+            <summary>   True to deny, false to allow read attributes. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyReadData">
+            <summary>   True to deny, false to allow read data. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyReadExtendedAttributes">
+            <summary>   True to deny, false to allow read extended attributes. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyReadPermissions">
+            <summary>   True to deny, false to allow read permissions. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denySynchronize">
+            <summary>   True to deny, false to allow synchronize. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyTakeOwnership">
+            <summary>   True to deny, false to allow take ownership. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyTraverse">
+            <summary>   True to deny, false to allow traverse. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyWrite">
+            <summary>   True to deny, false to allow write. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyWriteAttributes">
+            <summary>   True to deny, false to allow write attributes. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyWriteData">
+            <summary>   True to deny, false to allow write data. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.denyWriteExtendedAttributes">
+            <summary>   True to deny, false to allow write extended attributes. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowAppendData">
+            <summary>   True to allow, false to deny append data. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowChangePermissions">
+            <summary>   True to allow, false to deny change permissions. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowCreateDirectories">
+            <summary>   True to allow, false to deny create directories. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowCreateFiles">
+            <summary>   True to allow, false to deny create files. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowDelete">
+            <summary>   True to allow, false to deny delete. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowDeleteSubdirectoriesAndFiles">
+            <summary>   True to allow, false to deny delete subdirectories and files. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowExecuteFile">
+            <summary>   True to allow, false to deny execute file. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowFullControl">
+            <summary>   True to allow, false to deny full control. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowListDirectory">
+            <summary>   True to allow, false to deny list directory. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowModify">
+            <summary>   True to allow, false to deny modify. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowRead">
+            <summary>   True to allow, false to deny read. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowReadAndExecute">
+            <summary>   True to allow, false to deny read and execute. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowReadAttributes">
+            <summary>   True to allow, false to deny read attributes. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowReadData">
+            <summary>   True to allow, false to deny read data. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowReadExtendedAttributes">
+            <summary>   True to allow, false to deny read extended attributes. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowReadPermissions">
+            <summary>   True to allow, false to deny read permissions. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowSynchronize">
+            <summary>   True to allow, false to deny synchronize. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowTakeOwnership">
+            <summary>   True to allow, false to deny take ownership. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowTraverse">
+            <summary>   True to allow, false to deny traverse. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowWrite">
+            <summary>   True to allow, false to deny write. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowWriteAttributes">
+            <summary>   True to allow, false to deny write attributes. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowWriteData">
+            <summary>   True to allow, false to deny write data. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Common.Permissions.CheckPermissions.allowWriteExtendedAttributes">
+            <summary>   True to allow, false to deny write extended attributes. </summary>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanAppendData">
+             <summary>   Determine if we can append data. </summary>
+            
+             <returns>   True if we can append data, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanChangePermissions">
+             <summary>   Determine if we can change permissions. </summary>
+            
+             <returns>   True if we can change permissions, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanCreateDirectories">
+             <summary>   Determine if we can create directories. </summary>
+            
+             <returns>   True if we can create directories, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanCreateFiles">
+             <summary>   Determine if we can create files. </summary>
+            
+             <returns>   True if we can create files, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanDelete">
+             <summary>   Determine if we can delete. </summary>
+            
+             <returns>   True if we can delete, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanDeleteSubdirectoriesAndFiles">
+             <summary>   Determine if we can delete subdirectories and files. </summary>
+            
+             <returns>   True if we can delete subdirectories and files, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanExecuteFile">
+             <summary>   Determine if we can execute file. </summary>
+            
+             <returns>   True if we can execute file, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanFullControl">
+             <summary>   Determine if we can full control. </summary>
+            
+             <returns>   True if we can full control, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanListDirectory">
+             <summary>   Determine if we can list directory. </summary>
+            
+             <returns>   True if we can list directory, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanModify">
+             <summary>   Determine if we can modify. </summary>
+            
+             <returns>   True if we can modify, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanRead">
+             <summary>   Determine if we can read. </summary>
+            
+             <returns>   True if we can read, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanReadAndExecute">
+             <summary>   Determine if we can read and execute. </summary>
+            
+             <returns>   True if we can read and execute, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanReadAttributes">
+             <summary>   Determine if we can read attributes. </summary>
+            
+             <returns>   True if we can read attributes, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanReadData">
+             <summary>   Determine if we can read data. </summary>
+            
+             <returns>   True if we can read data, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanReadExtendedAttributes">
+             <summary>   Determine if we can read extended attributes. </summary>
+            
+             <returns>   True if we can read extended attributes, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanReadPermissions">
+             <summary>   Determine if we can read permissions. </summary>
+            
+             <returns>   True if we can read permissions, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanSynchronize">
+             <summary>   Determine if we can synchronize. </summary>
+            
+             <returns>   True if we can synchronize, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanTakeOwnership">
+             <summary>   Determine if we can take ownership. </summary>
+            
+             <returns>   True if we can take ownership, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanTraverse">
+             <summary>   Determine if we can traverse. </summary>
+            
+             <returns>   True if we can traverse, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanWrite">
+             <summary>   Determine if we can write. </summary>
+            
+             <returns>   True if we can write, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanWriteAttributes">
+             <summary>   Determine if we can write attributes. </summary>
+            
+             <returns>   True if we can write attributes, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanWriteData">
+             <summary>   Determine if we can write data. </summary>
+            
+             <returns>   True if we can write data, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.CanWriteExtendedAttributes">
+             <summary>   Determine if we can write extended attributes. </summary>
+            
+             <returns>   True if we can write extended attributes, false if not. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.GetWindowsIdentity">
+             <summary>   Gets windows identity. </summary>
+            
+             <returns>   The windows identity. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.GetPath">
+             <summary>   Gets the path. </summary>
+            
+             <returns>   The path. </returns>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.#ctor(System.String)">
+             <summary>
+                 Initializes a new instance of the PrimeHolding.Tools.Common.Permissions.CheckPermissions
+                 class.
+             </summary>
+            
+             <param name="path"> Full pathname of the file. </param>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.#ctor(System.String,System.Security.Principal.WindowsIdentity)">
+             <summary>
+                 Initializes a new instance of the PrimeHolding.Tools.Common.Permissions.CheckPermissions
+                 class.
+             </summary>
+            
+             <exception cref="T:System.Exception">    Thrown when an exception error condition occurs. </exception>
+            
+             <param name="path">         Full pathname of the file. </param>
+             <param name="principal">    The principal. </param>
+        </member>
+        <member name="M:PrimeHolding.Tools.Common.Permissions.CheckPermissions.Contains(System.Security.AccessControl.FileSystemRights,System.Security.AccessControl.FileSystemAccessRule)">
+             <summary>   Query if this object contains the given right. </summary>
+            
+             <param name="right">    The right. </param>
+             <param name="rule">     The rule. </param>
+            
+             <returns>   True if the object is in this collection, false if not. </returns>
+        </member>
+        <member name="T:PrimeHolding.Tools.Converter.ConverterContext">
+            <summary>   A converter context. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Converter.ConverterContext.converter">
+            <summary>   The converter. </summary>
+        </member>
+        <member name="M:PrimeHolding.Tools.Converter.ConverterContext.#ctor(PrimeHolding.Tools.Converter.IConvertStrategy)">
+             <summary>
+                 Initializes a new instance of the PrimeHolding.Tools.Converter.ConverterContext class.
+             </summary>
+            
+             <param name="converter">    The converter. </param>
+        </member>
+        <member name="M:PrimeHolding.Tools.Converter.ConverterContext.ConvertImage(System.Drawing.Image,System.String)">
+             <summary>   Convert image. </summary>
+            
+             <param name="sourceImage">      Source image. </param>
+             <param name="destinationFile">  Destination file. </param>
+        </member>
+        <member name="M:PrimeHolding.Tools.Converter.Gif.ImageConvert(System.Drawing.Image,System.String)">
+             <summary>   Image convert. </summary>
+            
+             <param name="sourceImage">      System.Drawing.Image instance of Source image. </param>
+             <param name="destinationFile">  Path to destination file for converted image. </param>
+            
+             <seealso cref="M:PrimeHolding.Tools.Converter.IConvertStrategy.ImageConvert(Image,String)"/>
+        </member>
+        <member name="T:PrimeHolding.Tools.Converter.IConvertStrategy">
+            <summary>   Interface for convert strategy. </summary>
+        </member>
+        <member name="M:PrimeHolding.Tools.Converter.IConvertStrategy.ImageConvert(System.Drawing.Image,System.String)">
+             <summary>   Image convert. </summary>
+            
+             <param name="sourceImage">      Source image. </param>
+             <param name="destinationFile">  Destination file. </param>
+        </member>
+        <member name="T:PrimeHolding.Tools.Converter.Jpeg">
+             <summary>   A jpeg. </summary>
+            
+             <seealso cref="T:PrimeHolding.Tools.Converter.IConvertStrategy"/>
+        </member>
+        <member name="M:PrimeHolding.Tools.Converter.Jpeg.ImageConvert(System.Drawing.Image,System.String)">
+             <summary>   Image convert. </summary>
+            
+             <param name="sourceImage">      Source image. </param>
+             <param name="destinationFile">  Destination file. </param>
+            
+             <seealso cref="M:PrimeHolding.Tools.Converter.IConvertStrategy.ImageConvert(Image,String)"/>
+        </member>
+        <member name="T:PrimeHolding.Tools.Converter.Png">
+             <summary>   A png. </summary>
+            
+             <seealso cref="T:PrimeHolding.Tools.Converter.IConvertStrategy"/>
+        </member>
+        <member name="M:PrimeHolding.Tools.Converter.Png.ImageConvert(System.Drawing.Image,System.String)">
+             <summary>   Image convert. </summary>
+            
+             <param name="sourceImage">      Source image. </param>
+             <param name="destinationFile">  Destination file. </param>
+            
+             <seealso cref="M:PrimeHolding.Tools.Converter.IConvertStrategy.ImageConvert(Image,String)"/>
+        </member>
+        <member name="T:PrimeHolding.Tools.ImageTools">
+            <summary>   An image tools. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.ImageTools.converter">
+            <summary>   The converter. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.ImageTools.resizer">
+            <summary>   The resizer. </summary>
+        </member>
+        <member name="M:PrimeHolding.Tools.ImageTools.CheckSourceFile(System.String)">
+             <summary>   Check source file. </summary>
+            
+             <exception cref="T:PrimeHolding.Tools.Common.Exceptions.FileNotReadableException"> Thrown when a File Not Readable error condition
+                                                         occurs. </exception>
+             <exception cref="T:PrimeHolding.Tools.Common.Exceptions.FileNotFoundException">    Thrown when the requested file is not present. </exception>
+            
+             <param name="sourceFile">   Source file. </param>
+        </member>
+        <member name="M:PrimeHolding.Tools.ImageTools.CheckDestinationFile(System.String)">
+             <summary>   Check destination file. </summary>
+            
+             <exception cref="T:PrimeHolding.Tools.Common.Exceptions.FileNotWritableException"> Thrown when a File Not Writable error condition
+                                                         occurs. </exception>
+             <exception cref="T:PrimeHolding.Tools.Common.Exceptions.FileNotFoundException">    Thrown when the requested file is not present. </exception>
+            
+             <param name="destinationFile">  Destination file. </param>
+        </member>
+        <member name="M:PrimeHolding.Tools.ImageTools.CheckWidth(System.Int32)">
+             <summary>   Check width. </summary>
+            
+             <exception cref="T:PrimeHolding.Tools.Common.Exceptions.InvalidParameterException">    Thrown when an Invalid Parameter error
+                                                             condition occurs. </exception>
+            
+             <param name="width">    The width. </param>
+        </member>
+        <member name="M:PrimeHolding.Tools.ImageTools.CheckHeight(System.Int32)">
+             <summary>   Check height. </summary>
+            
+             <exception cref="T:PrimeHolding.Tools.Common.Exceptions.InvalidParameterException">    Thrown when an Invalid Parameter error
+                                                             condition occurs. </exception>
+            
+             <param name="height">   The height. </param>
+        </member>
+        <member name="M:PrimeHolding.Tools.ImageTools.Convert(System.String,System.String,System.String)">
+             <summary>   Converts images. </summary>
+            
+             <exception cref="T:PrimeHolding.Tools.Common.Exceptions.ImageFormatException"> Thrown when an Image Format error condition occurs. </exception>
+            
+             <param name="sourceFile">       Source file. </param>
+             <param name="destinationFile">  Destination file. </param>
+             <param name="Type">             The type. </param>
+        </member>
+        <member name="M:PrimeHolding.Tools.ImageTools.Resize(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+             <summary>   Resizes images. </summary>
+            
+             <exception cref="T:PrimeHolding.Tools.Common.Exceptions.InvalidParameterException">    Thrown when an Invalid Parameter error
+                                                             condition occurs. </exception>
+            
+             <param name="sourceFile">       Source file. </param>
+             <param name="destinationFile">  Destination file. </param>
+             <param name="Type">             The type. </param>
+             <param name="width">            The width. </param>
+             <param name="height">           The height. </param>
+             <param name="startX">           (Optional) The start x coordinate. </param>
+             <param name="startY">           (Optional) The start y coordinate. </param>
+        </member>
+        <member name="T:PrimeHolding.Tools.Resizer.Crop">
+            <summary>   A crop. </summary>
+        </member>
+        <member name="M:PrimeHolding.Tools.Resizer.Crop.#ctor(System.Int32,System.Int32)">
+             <summary>
+             Initializes a new instance of the PrimeHolding.Tools.Resizer.Crop class.
+             </summary>
+            
+             <param name="x">    The x coordinate. </param>
+             <param name="y">    The y coordinate. </param>
+        </member>
+        <member name="M:PrimeHolding.Tools.Resizer.Crop.ImageResize(System.Drawing.Image,System.String,System.Int32,System.Int32)">
+             <summary>    Image resize. </summary>
+            
+             <param name="sourceImage">       Source file. </param>
+             <param name="destinationFile">   Destination file. </param>
+             <param name="destWidth">         Width of the destination. </param>
+             <param name="destHeight">        Height of the destination. </param>
+        </member>
+        <member name="T:PrimeHolding.Tools.Resizer.IResizeStrategy">
+            <summary>   Interface for resize strategy. </summary>
+        </member>
+        <member name="M:PrimeHolding.Tools.Resizer.IResizeStrategy.ImageResize(System.Drawing.Image,System.String,System.Int32,System.Int32)">
+             <summary>   Image resize. </summary>
+            
+             <param name="sourceFile">       Source file. </param>
+             <param name="destinationFile">  Destination file. </param>
+             <param name="destWidth">        Width of the destination. </param>
+             <param name="destHeight">       Height of the destination. </param>
+        </member>
+        <member name="T:PrimeHolding.Tools.Resizer.KeepAspect">
+            <summary>   A keep aspect. </summary>
+        </member>
+        <member name="M:PrimeHolding.Tools.Resizer.KeepAspect.ImageResize(System.Drawing.Image,System.String,System.Int32,System.Int32)">
+             <summary>   Image resize. </summary>
+            
+             <exception cref="T:PrimeHolding.Tools.Common.Exceptions.InvalidAspectRatioException">  Thrown when an Invalid Aspect Ratio error
+                                                             condition occurs. </exception>
+            
+             <param name="sourceImage">      Source image. </param>
+             <param name="destinationFile">  Destination file. </param>
+             <param name="destWidth">        Width of the destination. </param>
+             <param name="destHeight">       Height of the destination. </param>
+            
+             <seealso cref="M:PrimeHolding.Tools.Resizer.KeepAspect.ImageResize(Image,String,int,int)"/>
+        </member>
+        <member name="T:PrimeHolding.Tools.Resizer.ResizerContext">
+            <summary>   A resizer context. </summary>
+        </member>
+        <member name="F:PrimeHolding.Tools.Resizer.ResizerContext.resizer">
+            <summary>   The resizer. </summary>
+        </member>
+        <member name="M:PrimeHolding.Tools.Resizer.ResizerContext.#ctor(PrimeHolding.Tools.Resizer.IResizeStrategy)">
+             <summary>
+             Initializes a new instance of the PrimeHolding.Tools.Resizer.ResizerContext class.
+             </summary>
+            
+             <param name="resizer">  The resizer. </param>
+        </member>
+        <member name="M:PrimeHolding.Tools.Resizer.ResizerContext.ResizeImage(System.Drawing.Image,System.String,System.Int32,System.Int32)">
+             <summary>   Resize image. </summary>
+            
+             <remarks>   Arruor, 08.01.2018 г. </remarks>
+            
+             <param name="sourceFile">       Source file. </param>
+             <param name="destinationFile">  Destination file. </param>
+             <param name="destWidth">        Width of the destination. </param>
+             <param name="destHeight">       The destheight. </param>
+        </member>
+        <member name="T:PrimeHolding.Tools.Resizer.Skew">
+            <summary>   A skew. </summary>
+        </member>
+        <member name="M:PrimeHolding.Tools.Resizer.Skew.ImageResize(System.Drawing.Image,System.String,System.Int32,System.Int32)">
+             <summary>   Image resize. </summary>
+            
+             <param name="sourceImage">      Source file. </param>
+             <param name="destinationFile">  Destination file. </param>
+             <param name="destWidth">        Width of the destination. </param>
+             <param name="destHeight">       Height of the destination. </param>
+            
+             <seealso cref="M:PrimeHolding.Tools.Resizer.ResizerStrategy.ImageResize(Image,String,int,int)"/>
+        </member>
+    </members>
+</doc>
