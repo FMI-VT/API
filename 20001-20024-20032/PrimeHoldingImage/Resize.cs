@@ -7,6 +7,8 @@ using PrimeHoldingImage.Resizer;
 using PrimeHoldingImage.Exception;
 using System.IO;
 using System.Security.Permissions;
+using System.Security.AccessControl;
+using System.Security;
 
 namespace PrimeHoldingImage
 {
@@ -17,26 +19,14 @@ namespace PrimeHoldingImage
 
         public void Process(string sourceFile, string destinationFile, string type, int width, int height, int x, int y)
         {
-            #region FileExistenceCheck
+            #region SourceFileExistenceCheck
             //check if sourceFile exists, if not, throw exception
             if (!File.Exists(sourceFile))
             {
                 throw new PrimeHoldingImage.Exception.FileNotFoundException();
             }
             #endregion
-            #region FileFormatCheck
-            //check if the file's extension is supported
-            string extension = Path.GetExtension(sourceFile);
-            if (extension == ".png" || extension == ".jpeg" || extension == ".jpg" || extension == ".gif")
-            {
-
-            }
-            else
-            {
-                throw new FileExtensionNotSupportedException(extension);
-            }
-            #endregion
-            #region ActionCheck
+            #region ActionCheck (resize type)
             //check which action is chosen
             switch (type.ToLower())
             {
@@ -62,11 +52,23 @@ namespace PrimeHoldingImage
                 throw new DestinationFileNameException("Cant write destinationFile over sourceFile.");
             }
             #endregion
-            #region DirectoryWritePermissionCheck
-            var directoryPermission = new DirectoryInfo(destinationFile);
-            if (directoryPermission.Attributes.HasFlag(FileAttributes.ReadOnly))
+            #region DestinationFileDirectoryExistanceCheck
+
+            if (!Directory.Exists(Path.GetDirectoryName(destinationFile)))
             {
-                throw new NoWritePermissionsException();
+                throw new PrimeHoldingImage.Exception.DirectoryNotFoundException();
+            }
+            #endregion
+            #region DestinationFileFormatCheck
+            //check if the file's extension is supported
+            string extension = Path.GetExtension(destinationFile);
+            if (extension == ".png" || extension == ".jpeg" || extension == ".jpg" || extension == ".gif")
+            {
+
+            }
+            else
+            {
+                throw new DestinationFileTypeException();
             }
             #endregion
             this.converter.Resize(sourceFile, destinationFile, width, height, x, y);

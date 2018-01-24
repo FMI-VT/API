@@ -10,32 +10,31 @@ using System.IO;
 
 namespace ImageAPI.Strategies
 {
-    class ResizeKARStrategy : IEditStrategy
+    internal class ResizeKARStrategy : IEditStrategy
     {
-        public void Edit()
+
+        private int width, height;
+
+        public ResizeKARStrategy(int width, int height)
+        {
+            this.width = width;
+            this.height = height;
+        }
+
+        public void Edit(string sourcePath, string destinationPath)
         {
 
             //Resizing while keeping aspect ratio
-            //Uses an image from a sourcepath, provided by user input 
+            //Uses an image from a sourcePath
             //Calculates the width and height with percentage to keep the AR
             //Using the graphics library it does a high quality conversion to the desired width and height
-            //This class uses source(string), width(int), height(int) and destinationPath(string) as user inputs 
+            //This class uses sourcePath(string), width(int), height(int) and destinationPath(string) 
 
             try
             {
-                //Must provide full path with picture name and extension (e.g C:/Desktop/image.jpg)
-                Console.WriteLine("Enter the source filepath of your image: ");
-                string source = Console.ReadLine();
-                Image imgPhoto = Image.FromFile(source);
-                //Width and height are simple integers, px not needed after the digit
-                Console.WriteLine("Enter your desired width: ");
-                int Width = int.Parse(Console.ReadLine());
-                Console.WriteLine("Enter your desired height: ");
-                int Height = int.Parse(Console.ReadLine());
-                //Must provide full path with picture name and extension (e.g C:/Desktop/image.jpg)
-                Console.WriteLine("Enter your desired destination path: ");
-                string destinationPath = Console.ReadLine();
+                Console.WriteLine("Resizing...");
 
+                Image imgPhoto = Image.FromFile(sourcePath);
                 int sourceWidth = imgPhoto.Width;
                 int sourceHeight = imgPhoto.Height;
                 int sourceX = 0;
@@ -48,25 +47,25 @@ namespace ImageAPI.Strategies
                 float nPercentH = 0;
 
                 //Calculating width and height by percentage to keep AR
-                nPercentW = ((float)Width / (float)sourceWidth);
-                nPercentH = ((float)Height / (float)sourceHeight);
+                nPercentW = ((float)width / (float)sourceWidth);
+                nPercentH = ((float)height / (float)sourceHeight);
                 if (nPercentH < nPercentW)
                 {
                     nPercent = nPercentH;
-                    destX = System.Convert.ToInt16((Width -
+                    destX = System.Convert.ToInt16((width -
                                   (sourceWidth * nPercent)) / 2);
                 }
                 else
                 {
                     nPercent = nPercentW;
-                    destY = System.Convert.ToInt16((Height -
+                    destY = System.Convert.ToInt16((height -
                                   (sourceHeight * nPercent)) / 2);
                 }
 
                 int destWidth = (int)(sourceWidth * nPercent);
                 int destHeight = (int)(sourceHeight * nPercent);
 
-                Bitmap bmPhoto = new Bitmap(Width, Height,
+                Bitmap bmPhoto = new Bitmap(width, height,
                                   PixelFormat.Format24bppRgb);
                 bmPhoto.SetResolution(imgPhoto.HorizontalResolution,
                                  imgPhoto.VerticalResolution);

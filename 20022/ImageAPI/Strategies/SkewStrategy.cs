@@ -12,9 +12,24 @@ using System.IO;
 
 namespace ImageAPI.Strategies
 {
-    class SkewStrategy:IEditStrategy
+    internal class SkewStrategy:IEditStrategy
     {
-        public void Edit()
+
+        private int x1, x2, x3, x4, y1, y2, y3, y4;
+
+        public SkewStrategy(int x1, int x2, int x3, int x4, int y1, int y2, int y3, int y4)
+        {
+            this.x1 = x1;
+            this.x2 = x2;
+            this.x3 = x3;
+            this.x4 = x4;
+            this.y1 = y1;
+            this.y2 = y2;
+            this.y3 = y3;
+            this.y4 = y4;
+        }
+
+        public void Edit(string sourcePath, string destinationPath)
         {
             //Skewing strategy
             //By using 4(X,Y) Points from user input it distorts the image with those coordinates 
@@ -23,41 +38,14 @@ namespace ImageAPI.Strategies
 
             try
             {
-                //Must provide full path with picture name and extension (e.g C:/Desktop/image.jpg)
-                Console.WriteLine("Enter the source path of your image: ");
-                string source = Console.ReadLine();
-
-                Console.WriteLine("Enter the first angle's X coordinate : ");
-                int x1 = int.Parse(Console.ReadLine());
-                Console.WriteLine("Enter the first angle's Y coordinate : ");
-                int y1 = int.Parse(Console.ReadLine());
-       
-                Console.WriteLine("Enter the second angle's X coordinate: ");
-                int x2 = int.Parse(Console.ReadLine());
-                Console.WriteLine("Enter the second angle's Y coordinate : ");
-                int y2 = int.Parse(Console.ReadLine());
-
-                Console.WriteLine("Enter the third angle's X coordinate: ");
-                int x3 = int.Parse(Console.ReadLine());
-                Console.WriteLine("Enter the third angle's Y coordinate : ");
-                int y3 = int.Parse(Console.ReadLine());
-
-                Console.WriteLine("Enter the fourth angle's X coordinate: ");
-                int x4 = int.Parse(Console.ReadLine());
-                Console.WriteLine("Enter the fourth angle's Y, to change the perspective of the image: ");
-                int y4 = int.Parse(Console.ReadLine());
-
-                //Must provide full path with picture name and extension (e.g C:/Desktop/image.jpg)
-                Console.WriteLine("Enter desired location to store file: ");
-                string destinationPath = Console.ReadLine();
-
+                
                 Point topLeft = new Point(x1 , y1);
                 Point topRight = new Point(x2, y2);
                 Point bottomLeft = new Point(x3, y3);
                 Point bottomRight = new Point(x4, y4);
 
                 //Transofrming image to a Bitmap to use QuadDistort function
-                Image imgPhoto = Image.FromFile(source);
+                Image imgPhoto = Image.FromFile(sourcePath);
                 Bitmap transitionBmp = (Bitmap)imgPhoto;
 
                 //Additional function that distorts image 

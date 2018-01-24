@@ -147,10 +147,10 @@ namespace PrimeHolding.Tools
             }
             
             // Check source file for read access
-            //CheckSourceFile(sourceFile);
+            CheckSourceFile(sourceFile);
 
             // Check destination file for write access
-            //CheckDestinationFile(destinationFile);
+            CheckDestinationFile(destinationFile);
 
             Image sourceImage = Image.FromFile(sourceFile);
             converter.ConvertImage(sourceImage, destinationFile);

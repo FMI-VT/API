@@ -21,7 +21,7 @@ namespace kursov2.Resizer
 
         public static Image ScaleImage(Image image, int maxWidth, int maxHeight)
         {
-            var ratioX = (double)maxWidth / image.Width;
+            var ratioX = maxWidth / image.Width;
             var ratioY = (double)maxHeight / image.Height;
             var ratio = Math.Min(ratioX, ratioY);
 

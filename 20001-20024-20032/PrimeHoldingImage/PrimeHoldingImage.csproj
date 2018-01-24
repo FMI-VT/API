@@ -48,13 +48,11 @@
     <Compile Include="Converter\PNG.cs" />
     <Compile Include="Exception\AspectRatioNotMatch.cs" />
     <Compile Include="Exception\DestinationFileNameException.cs" />
-    <Compile Include="Exception\FileExtensionNotSupportedException.cs" />
+    <Compile Include="Exception\DirectoryNotFoundException.cs" />
+    <Compile Include="Exception\DestinationFileTypeException.cs" />
     <Compile Include="Exception\FileNotFoundException.cs" />
     <Compile Include="Exception\GenericException.cs" />
     <Compile Include="Exception\IlegalOperetaionException.cs" />
-    <Compile Include="Exception\NoWritePermissionsException.cs" />
-    <Compile Include="Exception\UnknownTypeException.cs" />
-    <Compile Include="PrimeHolding.Exception.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resize.cs" />
     <Compile Include="Resizer\Crop.cs" />
@@ -62,7 +60,6 @@
     <Compile Include="Resizer\IResizeStrategy.cs" />
     <Compile Include="Resizer\Scew.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

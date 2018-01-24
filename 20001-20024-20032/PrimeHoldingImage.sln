@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeHoldingImage", "PrimeHoldingImage\PrimeHoldingImage.csproj", "{3CF7039B-6350-49DA-BBF2-E1C9443EF036}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proba", "proba\proba.csproj", "{923F12D6-C75C-4AEB-B9E3-7F59964840CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "proba\Test.csproj", "{923F12D6-C75C-4AEB-B9E3-7F59964840CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForms", "WindowsForms\WindowsForms.csproj", "{F23043A8-05AE-43C3-B1DD-9455A6396A45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,15 @@ Global
 		{923F12D6-C75C-4AEB-B9E3-7F59964840CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{923F12D6-C75C-4AEB-B9E3-7F59964840CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{923F12D6-C75C-4AEB-B9E3-7F59964840CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F23043A8-05AE-43C3-B1DD-9455A6396A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F23043A8-05AE-43C3-B1DD-9455A6396A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F23043A8-05AE-43C3-B1DD-9455A6396A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F23043A8-05AE-43C3-B1DD-9455A6396A45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C1999D9-36BD-48B8-8AD6-996F2876C437}
 	EndGlobalSection
 EndGlobal
